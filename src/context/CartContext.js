@@ -5,3 +5,5 @@ const CartContext = createContext({
     increaseQuantity: () => {},
     decreaseQuantity: () => {},
 });
+
+export default CartContext;

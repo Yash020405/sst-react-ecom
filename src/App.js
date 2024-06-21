@@ -2,8 +2,11 @@ import './App.css';
 import Products from './components/Products/Products';
 import { useState } from 'react';
 import CartContext from './context/CartContext';
+
 function App() {
+
   let [cart, setCart] = useState({});
+  
   function increaseQuantity(product) {
     const newCart = { ...cart };
     if (!newCart[product.id]) {
