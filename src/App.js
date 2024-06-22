@@ -33,7 +33,7 @@ function App() {
   return (
     <CartContext.Provider value={{ cart, increaseQuantity, decreaseQuantity }}>
       <div className="App">
-        <Products cart={cart} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity} />
+        <Products/>
       </div>
     </CartContext.Provider>
   );

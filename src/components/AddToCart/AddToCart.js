@@ -31,15 +31,3 @@ function AddToCart({ product }) {
 }
 
 export default AddToCart;
-
-
-// array of object 
-// object of object 
-
-//[{id: 1, quantity: 10}, {id: 2, quantity: 10}, {id: 3, quantity: 10}, {id: 4, quantity: 10}]
-// cart = 
-// {id:{id: 1, quantity: 10}, id:{id: 2, quantity: 10}, id:{id: 3, quantity: 10}, id:{id: 4, quantity: 10}}
-//cart["3"]
-
-// Object.value(obj);
-// Object.keys(obj);
