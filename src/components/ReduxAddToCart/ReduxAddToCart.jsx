@@ -15,10 +15,10 @@ function AddToCart({ product }) {
         });
     }
 
-    let state = useSelector((state) => {
-        return state.items;
+    let quantity = useSelector((state) => {
+        return state.items[product.id]?.quantity || 0;
     });
-    const quantity = cart[product.id] ? cart[product.id].quantity : 0;
+    
     if (quantity === 0) {
         return (
             <div>

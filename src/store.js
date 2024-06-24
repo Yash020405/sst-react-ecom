@@ -1,4 +1,5 @@
 import { createStore } from "redux";
+import { omit } from "lodash";
 
 function cartReducer(state = { items : {}}, action) {
     switch(action.type) {
@@ -43,11 +44,9 @@ function cartReducer(state = { items : {}}, action) {
                     }
                 }
             }else {
-                const items = {...state.items};
-                delete items[product.id];
                 return {
                     ...state,
-                    items: items
+                    items: omit(state.items, product.id)
                 }
             }
 

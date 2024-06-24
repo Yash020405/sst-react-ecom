@@ -1,6 +1,6 @@
 import ProductCard from "../ProductCard/ProductCard";
 import Effect from "../Effect/Effect";
-
+import React from "react";
 function Products({cart, increaseQuantity, decreaseQuantity}) {
     const products = [
         {
