@@ -39,10 +39,7 @@ function Products() {
         <div>
             <div><Effect /></div>
             {products.map((item, index) => (
-                <ProductCard
-                    key={index}
-                    product={item}
-                />
+                <ProductCard key={index} product={item} />
             ))}
         </div>
     );
