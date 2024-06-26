@@ -1,9 +1,8 @@
 import './ProductCard.css';
 import ReduxAddToCart from '../ReduxAddToCart/ReduxAddToCart';
 import { useRef, useState } from 'react';
-function ProductCard({ product}) {
-  var a = 10;
-  a = a + 1;
+
+function ProductCard({ product, increaseQuantity, decreaseQuantity }) {
   let pRef = useRef(0);
   let iRef = useRef(0);
   let oRef = useRef(0);
@@ -23,13 +22,13 @@ function ProductCard({ product}) {
 
   return (
     <div className="product-card">
-      <p onClick={printTitle}> {product.title}</p>
-      <p ref={pRef}> {product.price.value}</p>
+      <p onClick={printTitle}>{product.title}</p>
+      <p ref={pRef}>{product.price}</p>
       <input type="text" onChange={displayOutput} ref={iRef} value={inputV} />
       <p ref={oRef}>Over here the output would arrive - {inputV}</p>
-      <ReduxAddToCart product={product}/>
+      <ReduxAddToCart product={product} />
     </div>
-    )
-  }
-  
+  );
+}
+
 export default ProductCard;
