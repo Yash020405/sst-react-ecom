@@ -45,7 +45,7 @@ function Products() {
   const [products, setProducts] = useState(initialProducts);
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const categories = ["All", "Electronics", "Clothing", "Footwear"]; // Update with your actual categories
+  const categories = ["All", "Electronics", "Clothing", "Footwear"];
 
   const handleCategoryChange = (category) => {
     if (category === "All") {
