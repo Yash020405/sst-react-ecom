@@ -2,7 +2,7 @@ import './ProductCard.css';
 import ReduxAddToCart from '../ReduxAddToCart/ReduxAddToCart';
 import { useRef, useState } from 'react';
 
-function ProductCard({ product}) {
+function ProductCard({ product }) {
   let pRef = useRef(0);
   let iRef = useRef(0);
   let oRef = useRef(0);
