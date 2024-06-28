@@ -1,6 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { addToCart } from "../../store";
-import { removeFromCart } from "../../store";
+import { addToCart , removeFromCart} from "../../store";
 
 function AddToCart({ product }) {
     let dispatch = useDispatch();
